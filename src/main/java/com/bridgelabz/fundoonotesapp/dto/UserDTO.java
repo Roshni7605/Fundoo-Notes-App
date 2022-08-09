@@ -1,15 +1,13 @@
-package com.bridgelabz.fundoonotesapp.entity;
+package com.bridgelabz.fundoonotesapp.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "UserData")
-public class User {
+public class UserDTO {
 
     private String id;
     private String firstName;
@@ -19,5 +17,4 @@ public class User {
     private String phoneNo;
     private String dob;
     private String profilePic;
-
 }
